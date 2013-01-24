@@ -20,3 +20,9 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " default folding is indent, which works fine for python
 set foldmethod=indent
 set foldlevelstart=20
+
+" dont try to open java class files as text
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class
+
+" ignore groovy Test files
+set wildignore+=*Tests.groovy
