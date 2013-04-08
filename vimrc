@@ -26,3 +26,18 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class
 
 " ignore groovy Test files
 set wildignore+=*Tests.groovy
+
+" move up and down by screen line, not file line
+:nmap j gj
+:nmap k gk
+
+" highlight search as you type
+:set incsearch
+
+" ignore case unless the search string includes mixed case
+:set ignorecase
+:set smartcase
+
+" highlight current search, use \q to remove highlight
+:set hlsearch
+:nmap \q :nohlsearch<CR>
