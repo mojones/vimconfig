@@ -41,3 +41,6 @@ set wildignore+=*Tests.groovy
 " highlight current search, use \q to remove highlight
 :set hlsearch
 :nmap \q :nohlsearch<CR>
+
+" dont highlight spaces
+:set hls!
